@@ -5,22 +5,8 @@ import ReactDOM from "react-dom";
 // include your styles into the webpack bundle
 import "../styles/index.css";
 import { matchRoutes } from "react-router";
-
+import Home from "./component/home.jsx";
 //import your own components
-
-function SimpleCounter (props) {
-    return (<div className="bigCounter">
-        <div className="clock">
-        <i className="far fa-clock"></i>
-        </div>
-            <div className="six">{props.digitSix % 10}</div>
-            <div className="five">{props.digitFive % 10}</div>
-            <div className="four">{props.digitFour % 10}</div>
-            <div className="three">{props.digitThree % 10}</div>
-            <div className="two">{props.digitTwo % 10}</div>
-            <div className="one">{props.digitOne % 10}</div>
-    </div>);
-}
 
 let counter = 0;
 setInterval(function() {
@@ -33,7 +19,7 @@ setInterval(function() {
 
         counter++;
 
-        ReactDOM.render(<SimpleCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} digitFive={five} digitSix={six} />, document.querySelector("#app")
+        ReactDOM.render(<Home digitOne={one} digitTwo={two} digitThree={three} digitFour={four} digitFive={five} digitSix={six} />, document.querySelector("#app")
         );
     }, 1000);
 

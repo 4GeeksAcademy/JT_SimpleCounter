@@ -1,8 +1,8 @@
 
 .bigCounter div{
     display: inline-block;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 100px;
+    line-height: 100px;
     background: #101010;
     color: white;
     padding: 10px;
@@ -12,4 +12,8 @@
     background-color: #101010;
     text-align: center;
     margin: 3px;
+}
+
+.container-fluid{
+    background-color: #101010;
 }
